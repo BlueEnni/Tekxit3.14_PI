@@ -4,7 +4,7 @@ MAINTAINER BlueEnni
 WORKDIR /data
 
 ENV URL=https://tekxit.xyz/downloads/
-ENV VERSION=0.13.2TekxitPiServer
+ENV VERSION=1.0.1TekxitPiServer
 
 #adding the entrypointscript to the container
 COPY entrypoint.sh ./
