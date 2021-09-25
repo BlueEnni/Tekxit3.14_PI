@@ -3,10 +3,8 @@ MAINTAINER BlueEnni
 
 WORKDIR /data
 
-ARG url=https://tekxit.xyz/downloads/
-ARG version=0.13.2TekxitPiServer
-ENV URL=$url
-ENV VERSION=$version
+ENV URL=https://tekxit.xyz/downloads/
+ENV VERSION=1.0.1TekxitPiServer
 
 #adding the entrypointscript to the container
 COPY entrypoint.sh ./
@@ -37,16 +35,11 @@ RUN apk add --no-cache bash \
 && chmod +x /files/entrypoint.sh
 WORKDIR /data
 
-ARG version=0.13.2TekxitPiServer
-ARG jarfile=forge-1.12.2-14.23.5.2854.jar
-ARG memory_size=4G
-ARG timezone=Europe/Berlin
-ARG java_flags="-Dfml.queryResult=confirm"
-ENV JAVAFLAGS=$java_flags
-ENV MEMORYSIZE=$memory_size
-ENV JARFILE=$jarfile
-ENV VERSION=$version
-ENV TIMEZONE=$timezone
+ENV VERSION=0.13.2TekxitPiServer
+ENV JARFILE=forge-1.12.2-14.23.5.2854.jar
+ENV JAVAFLAGS="-Dfml.queryResult=confirm"
+ENV MEMORYSIZE=4G
+ENV TIMEZONE=Europe/Berlin
 
 # Expose minecraft port
 EXPOSE 25565/tcp
