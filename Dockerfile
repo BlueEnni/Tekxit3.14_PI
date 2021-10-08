@@ -35,7 +35,7 @@ RUN apk add --no-cache bash \
 && chmod +x /files/entrypoint.sh
 WORKDIR /data
 
-ENV VERSION=0.13.2TekxitPiServer
+ENV VERSION=1.0.1TekxitPiServer
 ENV JARFILE=forge-1.12.2-14.23.5.2854.jar
 ENV JAVAFLAGS="-Dfml.queryResult=confirm"
 ENV MEMORYSIZE=4G
