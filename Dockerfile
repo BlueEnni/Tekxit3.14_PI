@@ -4,7 +4,7 @@ MAINTAINER BlueEnni
 WORKDIR /data
 
 ENV URL=https://tekxit.xyz/downloads/
-ENV VERSION=1.0.6TekxitPiServer
+ENV VERSION=1.0.7.1TekxitPiServer
 
 #adding the entrypointscript to the container
 COPY entrypoint.sh ./
@@ -35,7 +35,7 @@ RUN apk add --no-cache bash \
 && chmod +x /files/entrypoint.sh
 WORKDIR /data
 
-ENV VERSION=1.0.6TekxitPiServer
+ENV VERSION=1.0.7.1TekxitPiServer
 ENV JARFILE=forge-1.12.2-14.23.5.2854.jar
 ENV JAVAFLAGS="-Dfml.queryResult=confirm"
 ENV MEMORYSIZE=4G
