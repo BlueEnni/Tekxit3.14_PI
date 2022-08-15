@@ -36,7 +36,7 @@ RUN apk add --no-cache bash \
 WORKDIR /data
 
 ENV VERSION=1.0.7.1TekxitPiServer
-ENV JARFILE=forge-1.12.2-14.23.5.2854.jar
+ENV JARFILE=forge-1.12.2-14.23.5.2860.jar
 ENV JAVAFLAGS="-Dfml.queryResult=confirm"
 ENV MEMORYSIZE=4G
 ENV TIMEZONE=Europe/Berlin
